@@ -55,3 +55,54 @@ tailwind.config = {
         }
     },
 }
+
+
+Array.from(document.querySelectorAll("section input[data-config]"))
+    .forEach(conf => {
+        var confs = conf.getAttribute('data-config').split(',');
+        
+        var type = confs[0];    // multiple, single
+        var maxCount = parseInt(confs[1]) || -1; 
+        var fieldName = confs[2];
+        
+        var section = conf.parentNode;
+        var field = section.querySelector("input[name=" + fieldName + "]");
+        
+        // for buttons
+        var btns = Array.from(section.querySelectorAll("button"));
+        btns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                if (btn.classList.contains("active")) {
+                    btn.classList.toggle("active");
+                } else {
+                    if (type === "multiple") {
+                        var count = btns.filter(b => b.classList.contains("active")).length;
+                        if (maxCount != -1 && count >= maxCount) {
+                            // return none
+                        } else {
+                            btn.classList.toggle("active");
+                        }
+                    } else {
+                        btns.forEach(b => b.classList.remove("active"));
+                        btn.classList.toggle("active");
+                    }     
+                }
+
+                field.value = btns
+                    .filter(b => b.classList.contains("active"))
+                    .map(b => b.getAttribute('data-value'))
+                    .join(";");
+            }); 
+        });
+
+        // for pin buttons
+        var pins = Array.from(section.querySelectorAll("input.pin-btn"));
+        pins.forEach(pin => {
+            pin.addEventListener('change', () => {
+                field.value = pins
+                    .filter(p => p.checked)
+                    .map(p => p.getAttribute('data-value'))
+                    .join(";");
+            });
+        });
+    });

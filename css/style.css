@@ -200,3 +200,17 @@ input.pin-btn[type=checkbox]:checked + label::after{
     background-size: 56vw;
     background-position: top center;
 }
+
+button.hover\:text-white.active{
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+button.hover\:bg-blue-800.active{
+    --tw-bg-opacity: 1;
+    background-color: rgb(30 64 175 / var(--tw-bg-opacity));
+}
+
+.group.active .group-hover\:text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+}
