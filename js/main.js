@@ -99,10 +99,23 @@ Array.from(document.querySelectorAll("section input[data-config]"))
         var pins = Array.from(section.querySelectorAll("input.pin-btn"));
         pins.forEach(pin => {
             pin.addEventListener('change', () => {
+                var checkedPins = pins.filter(p => p.checked);
                 field.value = pins
                     .filter(p => p.checked)
                     .map(p => p.getAttribute('data-value'))
                     .join(";");
+                if (type === "multiple") {
+                    var checkedCount = checkedPins.length;
+                    var uncheckedPins = pins.filter(p => !p.checked);
+                    if (maxCount != -1 && checkedCount >= maxCount) {
+                        uncheckedPins.forEach(p => p.setAttribute('disabled', ''));
+                    } else {
+                        uncheckedPins.forEach(p => p.removeAttribute('disabled'));
+                    }
+                } else {
+                    var previousPins = pins.filter(p => p.checked && p != pin);
+                    previousPins.forEach(p => p.checked = false);
+                }
             });
         });
     });

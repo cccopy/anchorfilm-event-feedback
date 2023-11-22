@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta property="og:image" content="#" />
+  <meta property="og:image" content="images/select/FBcover.jpg" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="#" />
   <meta property="og:title" content="品牌短影音！批量製作Hold得住-錨點影音" />
@@ -63,19 +63,18 @@
               虛擬人方案 </a>
           </li>
           <li class="text-center flex gap-4 justify-center py-2">
-            <a href="#"
+            <a href="https://www.facebook.com/AnchorfilmTW" target="_blank"
               class="inline-block px-2 py-1 bg-gray-100 rounded-lg border-b border-gray-100/50 hover:text-gray-200">
               <img src="images/icon/Facebook.svg" alt="">
             </a>
-            <a href="#"
+            <a href="https://www.instagram.com/anchorfilmtw/" target="_blank"
               class="inline-block px-2 py-1 bg-gray-100 rounded-lg border-b border-gray-100/50 hover:text-gray-200">
               <img src="images/icon/Instagram.svg" alt="">
             </a>
-            <a href="#"
+            <a href="https://www.youtube.com/channel/UC8oq1CmbCcqzTzr7PYhR0mg" target="_blank"
               class="inline-block px-2 py-1 bg-gray-100 rounded-lg border-b border-gray-100/50 hover:text-gray-200">
               <img src="images/icon/YouTube.svg" alt="">
             </a>
-
           </li>
         </ul>
       </div>
@@ -104,13 +103,13 @@
           <label for="message" class="talker">Hi，請問你的公司名稱？</label>
         </div>
 
-        <textarea id="message" rows="10" name="qa_01"
+        <textarea id="message" rows="4" name="qa_01"
           class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           placeholder="請輸入您的公司名"></textarea>
 
       </div>
       <div class="bottom flex justify-between">
-        <div class="text-base font-medium btn-gray">返回</div>
+        <div class="text-base font-medium btn-gray"> </div>
         <div class="text-base font-medium btn-primary">確認
           <img class="inline-block" src="images/icon/angor.svg" alt="">
         </div>
@@ -155,7 +154,7 @@
       <div class="body text-left h-ful">
         <div class="q-box">
           <img class="w-10 -mt-3" src="images/icon/yy.svg" alt="">
-          <label for="message" class="talker">這次製作影片的行銷宣傳目的為何？</label>
+          <label for="message" class="talker">這次製作影片的行銷宣傳目的為何？*複選</label>
         </div>
 
         <img class="w-full" src="images/img/q3_fannel.png" alt="">
@@ -220,7 +219,7 @@
 
     <!-- qa_05 -->
     <section id="QA2_05" class="bg-slate-100 flex flex-col gap-4 py-8 px-4 justify-between">
-      <input type="hidden" data-config="multiple,,qa_05">
+      <input type="hidden" data-config="multiple,5,qa_05">
       <div class="top flex gap-2 items-baseline justify-center">
         <img src="images/icon/start.svg" alt="">
         <div class="text-3xl font-bold">05.</div>
@@ -229,89 +228,117 @@
       <div class="body text-left h-ful">
         <div class="q-box">
           <img class="w-10 -mt-3" src="images/icon/yy.svg" alt="">
-          <label for="message" class="talker">勾選喜歡的影片風格？</label>
+          <label for="message" class="talker">勾選喜歡的影片風格？<br>（複選，點擊標題即可進行勾選）</label>
         </div>
 
         <input type="hidden" name="qa_05">
         <div class="grid grid-cols-2 gap-2">
           <!-- btn_pin ::checkbox 是依 ID 控制 labal 的 for -->
           <div class="group flex w-full flex-col max-w-xl hover:bg-gray-100 mb-2">
-            <input type="checkbox" class="pin-btn" id="pin-btn1" name="pin-btn" data-value="社群互動型">
+
+            <input type="checkbox" class="pin-btn" id="pin-btn1" name="pin-btn" data-value="Jomalone托特袋">
             <label for="pin-btn1">
-              <img class="object-cover h-auto w-full rounded-xl transition duration-300 ease-in"
+              <!--img class="object-cover h-auto w-full rounded-xl transition duration-300 ease-in"
                 src="https://images.unsplash.com/photo-1699804368701-d52e876bf01a?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="">
+                alt="">-->
+
+<iframe width="100%" height="420" src="https://www.youtube.com/embed/Hx-M4RUqZQk?si=QTWh59FigC9B1eTN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+              <div class="flex flex-col items-start py-3 px-0 leading-normal">
+                <h5 class="text-base font-bold text-gray-900">品牌周邊動起來！</h5>
+                <p class="text-sm text-gray-500 text-left">提升社群轉發率！讓品牌產品每樣都吸睛</p>
+              </div>
             </label>
-            <div class="flex flex-col items-start py-3 px-0 leading-normal">
-              <h5 class="text-base font-bold text-gray-900">社群互動型</h5>
-              <p class="text-sm text-gray-500 text-left">增加網路聲量、社群討論度</p>
-            </div>
           </div>
+
+
+
           <!-- btn_pin ::checkbox 是依 ID 控制 labal 的 for -->
           <div class="group flex w-full flex-col max-w-xl hover:bg-gray-100 mb-2">
-            <input type="checkbox" class="pin-btn" id="pin-btn2" name="pin-btn" data-value="社群互動型">
+            <input type="checkbox" class="pin-btn" id="pin-btn2" name="pin-btn" data-value="投信投顧公會_兔年賀卡">
             <label for="pin-btn2">
-              <img class="object-cover h-auto w-full rounded-xl transition duration-300 ease-in"
+              <!--img class="object-cover h-auto w-full rounded-xl transition duration-300 ease-in"
                 src="https://images.unsplash.com/photo-1699804368701-d52e876bf01a?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="">
+                alt="">-->
+
+<iframe width="100%" height="420" src="https://www.youtube.com/embed/WWfNvdYAPxQ?si=4NP3jMEj7zFhlwBF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+              <div class="flex flex-col items-start py-3 px-0 leading-normal">
+                <h5 class="text-base font-bold text-gray-900">專屬動態賀卡！喜氣洋洋</h5>
+                <p class="text-sm text-gray-500 text-left">模板搭配品牌元素，充分展現獨特的年節喜氣洋洋！</p>
+              </div>
             </label>
-            <div class="flex flex-col items-start py-3 px-0 leading-normal">
-              <h5 class="text-base font-bold text-gray-900">社群互動型</h5>
-              <p class="text-sm text-gray-500 text-left">增加網路聲量、社群討論度</p>
-            </div>
           </div>
+
+
           <!-- btn_pin ::checkbox 是依 ID 控制 labal 的 for -->
           <div class="group flex w-full flex-col max-w-xl hover:bg-gray-100 mb-2">
-            <input type="checkbox" class="pin-btn" id="pin-btn3" name="pin-btn" data-value="社群互動型">
+            <input type="checkbox" class="pin-btn" id="pin-btn3" name="pin-btn" data-value="勞動部戶外廣告">
             <label for="pin-btn3">
-              <img class="object-cover h-auto w-full rounded-xl transition duration-300 ease-in"
+              <!--img class="object-cover h-auto w-full rounded-xl transition duration-300 ease-in"
                 src="https://images.unsplash.com/photo-1699804368701-d52e876bf01a?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="">
+                alt="">-->
+
+<iframe width="100%" height="420" src="https://www.youtube.com/embed/TsrWPrOTSkU?si=H9sh9Sq6pc-9TGud" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+              <div class="flex flex-col items-start py-3 px-0 leading-normal">
+                <h5 class="text-base font-bold text-gray-900">抓取資訊重點！靜態DM動起來</h5>
+                <p class="text-sm text-gray-500 text-left">不用額外素材！一張DM，重點資訊立即轉換，迅速吸收。</p>
+              </div>
             </label>
-            <div class="flex flex-col items-start py-3 px-0 leading-normal">
-              <h5 class="text-base font-bold text-gray-900">社群互動型</h5>
-              <p class="text-sm text-gray-500 text-left">增加網路聲量、社群討論度</p>
-            </div>
           </div>
+
+
           <!-- btn_pin ::checkbox 是依 ID 控制 labal 的 for -->
           <div class="group flex w-full flex-col max-w-xl hover:bg-gray-100 mb-2">
-            <input type="checkbox" class="pin-btn" id="pin-btn4" name="pin-btn" data-value="社群互動型">
+            <input type="checkbox" class="pin-btn" id="pin-btn4" name="pin-btn" data-value="佳格OMG">
             <label for="pin-btn4">
-              <img class="object-cover h-auto w-full rounded-xl transition duration-300 ease-in"
+              <!--img class="object-cover h-auto w-full rounded-xl transition duration-300 ease-in"
                 src="https://images.unsplash.com/photo-1699804368701-d52e876bf01a?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="">
+                alt="">-->
+
+
+<iframe width="100%" height="420" src="https://www.youtube.com/embed/d-GYHrqi9nM?si=F2XMpACoVY_yAQbb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+              <div class="flex flex-col items-start py-3 px-0 leading-normal">
+                <h5 class="text-base font-bold text-gray-900">一直讓人Repeat！15秒美味食譜</h5>
+                <p class="text-sm text-gray-500 text-left">美味食譜超簡單製作步驟，吸引消費者購買產品來嘗試。</p>
+              </div>
             </label>
-            <div class="flex flex-col items-start py-3 px-0 leading-normal">
-              <h5 class="text-base font-bold text-gray-900">社群互動型</h5>
-              <p class="text-sm text-gray-500 text-left">增加網路聲量、社群討論度</p>
-            </div>
           </div>
+
+
           <!-- btn_pin ::checkbox 是依 ID 控制 labal 的 for -->
-          <div class="group flex w-full flex-col max-w-xl hover:bg-gray-100 mb-2">
+          <!--div class="group flex w-full flex-col max-w-xl hover:bg-gray-100 mb-2">
             <input type="checkbox" class="pin-btn" id="pin-btn5" name="pin-btn" data-value="社群互動型">
             <label for="pin-btn5">
               <img class="object-cover h-auto w-full rounded-xl transition duration-300 ease-in"
                 src="https://images.unsplash.com/photo-1699804368701-d52e876bf01a?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="">
+              <div class="flex flex-col items-start py-3 px-0 leading-normal">
+                <h5 class="text-base font-bold text-gray-900">社群互動型</h5>
+                <p class="text-sm text-gray-500 text-left">增加網路聲量、社群討論度</p>
+              </div>
             </label>
-            <div class="flex flex-col items-start py-3 px-0 leading-normal">
-              <h5 class="text-base font-bold text-gray-900">社群互動型</h5>
-              <p class="text-sm text-gray-500 text-left">增加網路聲量、社群討論度</p>
-            </div>
-          </div>
+          </div>-->
+
+
           <!-- btn_pin ::checkbox 是依 ID 控制 labal 的 for -->
-          <div class="group flex w-full flex-col max-w-xl hover:bg-gray-100 mb-2">
+          <!--div class="group flex w-full flex-col max-w-xl hover:bg-gray-100 mb-2">
             <input type="checkbox" class="pin-btn" id="pin-btn6" name="pin-btn" data-value="社群互動型">
             <label for="pin-btn6">
               <img class="object-cover h-auto w-full rounded-xl transition duration-300 ease-in"
                 src="https://images.unsplash.com/photo-1699804368701-d52e876bf01a?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="">
+              <div class="flex flex-col items-start py-3 px-0 leading-normal">
+                <h5 class="text-base font-bold text-gray-900">社群互動型</h5>
+                <p class="text-sm text-gray-500 text-left">增加網路聲量、社群討論度</p>
+              </div>
             </label>
-            <div class="flex flex-col items-start py-3 px-0 leading-normal">
-              <h5 class="text-base font-bold text-gray-900">社群互動型</h5>
-              <p class="text-sm text-gray-500 text-left">增加網路聲量、社群討論度</p>
-            </div>
-          </div>
+          </div>-->
+
+
         </div>
       </div>
       <div class="bottom flex justify-between">
@@ -430,7 +457,7 @@
     </div>
   </div>
   <!-- loading-mask -->
-  
+
   <footer class="bg-gray-800 text-gray-200 text-center p-2 text-sm font-light">2023-2024 © 錨點影音股份有限公司</footer>
 
   <script src="js/main.js"></script> <!-- 設定檔勿動 -->
