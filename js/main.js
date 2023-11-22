@@ -56,7 +56,7 @@ tailwind.config = {
     },
 }
 
-
+// handle inputs
 Array.from(document.querySelectorAll("section input[data-config]"))
     .forEach(conf => {
         var confs = conf.getAttribute('data-config').split(',');
@@ -106,3 +106,18 @@ Array.from(document.querySelectorAll("section input[data-config]"))
             });
         });
     });
+
+// handle anchor action
+var sections = Array.from(document.querySelectorAll("form section"));
+sections.forEach((sec, sidx) => {
+    var backBtn = sec.querySelector(".bottom .btn-gray");
+    var confirmBtn = sec.querySelector(".bottom .btn-primary");
+    confirmBtn && confirmBtn.addEventListener('click', function(){
+        var target = sections[sidx + 1];
+        if (target.id) location.href = "#" + target.id;
+    });
+    backBtn && backBtn.addEventListener('click', function(){
+        var target = sections[sidx - 1];
+        if (target.id) location.href = "#" + target.id;
+    });
+});
