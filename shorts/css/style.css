@@ -230,4 +230,10 @@ button.active p {
     display: none !important;
 }
 
-
+input[hide] {
+    height: 1px;
+    opacity: 0;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}

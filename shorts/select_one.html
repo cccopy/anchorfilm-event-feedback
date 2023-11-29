@@ -105,8 +105,8 @@
 
         <textarea id="message" rows="4" name="qa_01"
           class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-          placeholder="請輸入您的公司名"></textarea>
-
+          placeholder="請輸入您的公司名" required="" aria-describedby="qa_01-error"></textarea>
+          <span id="qa_01-error"></span>
       </div>
       <div class="bottom flex justify-between">
         <div class="text-base font-medium btn-gray"></div>
@@ -132,8 +132,8 @@
         <span class="text-xs text-gray-400">（*簡述內容或提供產品連結）</span>
         <textarea id="message" rows="10" name="qa_02"
           class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-          placeholder="輸入內容"></textarea>
-
+          placeholder="輸入內容" required="" aria-describedby="qa_02-error"></textarea>
+          <span id="qa_02-error"></span>
       </div>
       <div class="bottom flex justify-between">
         <div class="text-base font-medium btn-gray">返回</div>
@@ -159,7 +159,8 @@
 
         <img class="w-full" src="images/img/q3_fannel.png" alt="">
         <span class="text-xs text-gray-400 mb-2">（* 複選）</span>
-        <input type="hidden" name="qa_03">
+        <input name="qa_03" hide required="" aria-describedby="qa_03-error">
+        <span id="qa_03-error"></span>
         <button type="button" data-value="行銷初期大量曝光"
           class="w-full text-black border border-black focus:ring-2 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-base px-4 py-1 text-center me-2 mb-2">行銷初期大量曝光
           <span class="font-normal block">話題操作、時事跟風</span>
@@ -204,7 +205,8 @@
         </div>
 
         <span class="text-xs text-gray-400 mb-2">（* 複選，至多2類）</span>
-        <input type="hidden" name="qa_04">
+        <input name="qa_04" hide required="" aria-describedby="qa_04-error">
+        <span id="qa_04-error"></span>
         <button type="button" data-value="社群互動型"
           class="group flex w-full items-center bg-white border border-gray-200 rounded-xl overflow-hidden shadow flex-row max-w-xl mb-2">
           <img class="object-cover h-40" style="width: 6rem;" 
@@ -283,7 +285,8 @@
           <img class="w-10 -mt-3" src="images/icon/yy.svg" alt="">
           <label for="message" class="talker">預計長期推廣或是單次專案活動？</label>
         </div>
-        <input type="hidden" name="qa_05">
+        <input name="qa_05" hide required="" aria-describedby="qa_05-error">
+        <span id="qa_05-error"></span>
         <button type="button" data-value="長期推廣"
           class="w-full text-black border border-black focus:ring-2 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-base px-4 py-1 text-center me-2 mb-2">長期推廣</button>
         <button type="button" data-value="單次專案活動"
@@ -312,7 +315,8 @@
           <label for="message" class="talker">勾選喜歡的影片風格？<br>（複選，至多2類，點擊標題即可進行勾選）</label>
         </div>
 
-        <input type="hidden" name="qa_06">
+        <input name="qa_06" hide required="" aria-describedby="qa_06-error">
+        <span id="qa_06-error"></span>
         <div class="grid grid-cols-2 gap-2">
           <!-- btn_pin ::checkbox 是依 ID 控制 labal 的 for -->
           <div class="group flex w-full flex-col max-w-xl hover:bg-gray-100 mb-2">
@@ -520,7 +524,8 @@
           </div>
           <input datepicker datepicker-orientation="bottom center" type="date" name="qa_07"
             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            placeholder="選擇日期">
+            placeholder="選擇日期" required="" aria-describedby="qa_07-error">
+          <span id="qa_07-error"></span>
         </div>
 
 
@@ -554,28 +559,32 @@
                 class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">姓名</label>
               <input type="text" id="last_name" name="name" 
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="姓名" required>
+                placeholder="姓名" required="" aria-describedby="name-error">
+              <span id="name-error"></span>
             </div>
             <div>
               <label for="email"
                 class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">Email</label>
               <input type="email" id="email" name="email"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="john.doe@company.com" required>
+                placeholder="john.doe@company.com" required="" aria-describedby="email-error">
+              <span id="email-error"></span>
             </div>
             <div>
               <label for="phone"
                 class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">電話</label>
               <input type="tel" id="phone" name="phone"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="ex: 0923-123-123" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required>
+                placeholder="ex: 0923-123-123" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required="" aria-describedby="phone-error">
+              <span id="phone-error"></span>
             </div>
             <div>
               <label for="website"
                 class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">LINE</label>
               <input type="text" id="website" name="line"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="Line ID" required>
+                placeholder="Line ID" required="" aria-describedby="line-error">
+              <span id="line-error"></span>
             </div>
           </div>
           <button type="reset" class="text-base font-medium btn-gray">返回</button>

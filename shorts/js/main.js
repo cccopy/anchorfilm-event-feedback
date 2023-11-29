@@ -92,6 +92,7 @@ Array.from(document.querySelectorAll("section input[data-config]"))
                     .filter(b => b.classList.contains("active"))
                     .map(b => b.getAttribute('data-value'))
                     .join(";");
+                field.dispatchEvent(new Event('change'));
             }); 
         });
 
@@ -104,6 +105,7 @@ Array.from(document.querySelectorAll("section input[data-config]"))
                     .filter(p => p.checked)
                     .map(p => p.getAttribute('data-value'))
                     .join(";");
+                field.dispatchEvent(new Event('change'));
                 if (type === "multiple") {
                     var checkedCount = checkedPins.length;
                     var uncheckedPins = pins.filter(p => !p.checked);
