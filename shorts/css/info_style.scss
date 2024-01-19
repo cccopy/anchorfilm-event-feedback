@@ -1,0 +1,193 @@
+:root {
+  --cvo_primary_md: #224CE7;
+  --cvo_primary_dark: #00228A;
+  --cvo_primary_light: #DDE1FF;
+  --cvo_secondary: #F5A218;
+  --cvo_secondary_dark: #462A00;
+  --cvo_secondary_light: #FFEBD3;
+  --cvo_hignlight: #37B5FE;
+  --cvo_hignlight_dark: #00344F;
+  --cvo_hignlight_light: #CAE6FF;
+  --cvo_comple_dark: #241A00;
+  --cvo_comple: #FFCB24;
+  --cvo_comple_light: #FFEFD1;
+  --white: #ffffff;
+}
+
+.info-wrap{
+  width: 100%;
+  padding-top: 48px;
+  background-color: #F1F1F1;
+  .c-blue{
+    color: var(--cvo_primary_md);
+  }
+  .c-org{
+    color: var(--cvo_secondary);
+  }
+  h5.top-title{
+    color: #000;
+    padding: 10px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #F1F1F1;
+    &>span{
+      position: relative;
+      &::before{
+        position: absolute;
+        content: "";
+        width: 19px;
+        height: 20px;
+        background: url(../images/icon/start_blue.svg) center center no-repeat;
+        background-size: contain;
+        top: calc(50% - 10px);
+        left: -28px;
+        display: block;
+      }
+      &::after{
+        position: absolute;
+        content: "";
+        width: 19px;
+        height: 20px;
+        background: url(../images/icon/start_blue.svg) center center no-repeat;
+        background-size: contain;
+        top: calc(50% - 10px);
+        right: -28px;
+        display: block;
+      }
+    }
+    
+  }
+  .main-banner {
+    position: relative;
+    margin-bottom: 50px;
+    .img-bn{
+      height: 540px;
+      background: url(../images/hero/top_banner_a_bg.png) top center no-repeat;
+      background-size: cover;
+      .phone{
+        background: url(../images/hero/img_phone.png) top center no-repeat;
+        position: absolute;
+        top: 50px;
+        left: calc(50% - 136.5px);
+        width: 273px;
+        margin: 0 auto;
+        padding: 16px 19px 0 19px;
+        iframe{
+          overflow: hidden;
+          border-radius: 25px;
+          height: 455px;
+        }
+      }
+    }
+    h2 {
+      font-size: 22px;
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      padding:5px 15px;
+      color: var(--white);
+      font-weight: bold;
+    }
+    .advantage-cont{
+      position: absolute;
+      width: 100%;
+      padding: 15px 0 15px 32%;
+      bottom: -40px;
+      background-color: var(--white);
+      border-radius: 0 50px 0 50px;
+      overflow: hidden;
+      .icon{
+        position: absolute;
+        bottom: 0px;
+        left: 7%;
+        width: 23%;
+      }
+      ul{
+        li{
+          p{
+            font-size: 16px;
+            color: #404040;
+          }
+        }
+      }
+    }
+    
+  }
+  .info-cont{
+    ul.text-list{
+      width: 75%;
+      max-width: 316px;
+      margin: 0 auto;
+      padding-bottom: 10px;
+      li{
+        border: #000 2px solid; 
+        border-radius: 8px;
+        background-color: var(--white);
+        margin: 5px 0;
+        overflow: hidden;
+        p{
+          padding: 10px;
+          position: relative;
+          padding-left: 40px;
+          &::before{
+            position: absolute;
+            content: "";
+            width: 16px;
+            height: 100%;
+            top: 0;
+            left: 0;
+            display: block;
+            background-color: var(--cvo_primary_md);
+          }
+        }
+      }
+    }
+    ul.card-list{
+      width: 75%;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: 10px;
+      li{
+        flex: 50%;
+        padding: 5px;
+        .step-bn{
+          background-color: var(--white);
+          border: var(--cvo_primary_md) 1px solid;
+          border-radius: 8px;
+          overflow: hidden;
+          p{
+            padding: 5px;
+            font-size: 16px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+.bg-org{
+  .img-bn {
+    background: url(../images/hero/top_banner_b_bg.png) top center no-repeat;
+    background-size: cover;
+  }
+  h5.top-title {
+    &>span {
+      &::before, 
+      &::after {
+        background: url(../images/icon/start_org.svg) center center no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+  .info-cont{
+    ul.text-list li p::before{
+      background-color: var(--cvo_secondary);
+    }
+    ul.card-list li .step-bn{
+      border: var(--cvo_secondary) 1px solid;
+    }
+  }
+    
+}

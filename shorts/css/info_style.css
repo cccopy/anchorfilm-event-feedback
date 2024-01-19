@@ -1,0 +1,207 @@
+:root {
+  --cvo_primary_md: #224CE7;
+  --cvo_primary_dark: #00228A;
+  --cvo_primary_light: #DDE1FF;
+  --cvo_secondary: #F5A218;
+  --cvo_secondary_dark: #462A00;
+  --cvo_secondary_light: #FFEBD3;
+  --cvo_hignlight: #37B5FE;
+  --cvo_hignlight_dark: #00344F;
+  --cvo_hignlight_light: #CAE6FF;
+  --cvo_comple_dark: #241A00;
+  --cvo_comple: #FFCB24;
+  --cvo_comple_light: #FFEFD1;
+  --white: #ffffff;
+}
+
+.info-wrap {
+  width: 100%;
+  padding-top: 48px;
+  background-color: #F1F1F1;
+}
+
+.info-wrap .c-blue {
+  color: var(--cvo_primary_md);
+}
+
+.info-wrap .c-org {
+  color: var(--cvo_secondary);
+}
+
+.info-wrap h5.top-title {
+  color: #000;
+  padding: 10px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  background-color: #F1F1F1;
+}
+
+.info-wrap h5.top-title > span {
+  position: relative;
+}
+
+.info-wrap h5.top-title > span::before {
+  position: absolute;
+  content: "";
+  width: 19px;
+  height: 20px;
+  background: url(../images/icon/start_blue.svg) center center no-repeat;
+  background-size: contain;
+  top: calc(50% - 10px);
+  left: -28px;
+  display: block;
+}
+
+.info-wrap h5.top-title > span::after {
+  position: absolute;
+  content: "";
+  width: 19px;
+  height: 20px;
+  background: url(../images/icon/start_blue.svg) center center no-repeat;
+  background-size: contain;
+  top: calc(50% - 10px);
+  right: -28px;
+  display: block;
+}
+
+.info-wrap .main-banner {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.info-wrap .main-banner .img-bn {
+  height: 540px;
+  background: url(../images/hero/top_banner_a_bg.png) top center no-repeat;
+  background-size: cover;
+}
+
+.info-wrap .main-banner .img-bn .phone {
+  background: url(../images/hero/img_phone.png) top center no-repeat;
+  position: absolute;
+  top: 50px;
+  left: calc(50% - 136.5px);
+  width: 273px;
+  margin: 0 auto;
+  padding: 16px 19px 0 19px;
+}
+
+.info-wrap .main-banner .img-bn .phone iframe {
+  overflow: hidden;
+  border-radius: 25px;
+  height: 455px;
+}
+
+.info-wrap .main-banner h2 {
+  font-size: 22px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  padding: 5px 15px;
+  color: var(--white);
+  font-weight: bold;
+}
+
+.info-wrap .main-banner .advantage-cont {
+  position: absolute;
+  width: 100%;
+  padding: 15px 0 15px 32%;
+  bottom: -40px;
+  background-color: var(--white);
+  border-radius: 0 50px 0 50px;
+  overflow: hidden;
+}
+
+.info-wrap .main-banner .advantage-cont .icon {
+  position: absolute;
+  bottom: 0px;
+  left: 7%;
+  width: 23%;
+}
+
+.info-wrap .main-banner .advantage-cont ul li p {
+  font-size: 16px;
+  color: #404040;
+}
+
+.info-wrap .info-cont ul.text-list {
+  width: 75%;
+  max-width: 316px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.info-wrap .info-cont ul.text-list li {
+  border: #000 2px solid;
+  border-radius: 8px;
+  background-color: var(--white);
+  margin: 5px 0;
+  overflow: hidden;
+}
+
+.info-wrap .info-cont ul.text-list li p {
+  padding: 10px;
+  position: relative;
+  padding-left: 40px;
+}
+
+.info-wrap .info-cont ul.text-list li p::before {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: block;
+  background-color: var(--cvo_primary_md);
+}
+
+.info-wrap .info-cont ul.card-list {
+  width: 75%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 10px;
+}
+
+.info-wrap .info-cont ul.card-list li {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  padding: 5px;
+}
+
+.info-wrap .info-cont ul.card-list li .step-bn {
+  background-color: var(--white);
+  border: var(--cvo_primary_md) 1px solid;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.info-wrap .info-cont ul.card-list li .step-bn p {
+  padding: 5px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.bg-org .img-bn {
+  background: url(../images/hero/top_banner_b_bg.png) top center no-repeat;
+  background-size: cover;
+}
+
+.bg-org h5.top-title > span::before, .bg-org h5.top-title > span::after {
+  background: url(../images/icon/start_org.svg) center center no-repeat;
+  background-size: contain;
+}
+
+.bg-org .info-cont ul.text-list li p::before {
+  background-color: var(--cvo_secondary);
+}
+
+.bg-org .info-cont ul.card-list li .step-bn {
+  border: var(--cvo_secondary) 1px solid;
+}
+/*# sourceMappingURL=info_style.css.map */
