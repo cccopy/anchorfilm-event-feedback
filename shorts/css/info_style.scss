@@ -168,19 +168,21 @@
   }
 }
 .bg-org{
-  .img-bn {
-    background: url(../images/hero/top_banner_b_bg.png) top center no-repeat;
-    background-size: cover;
-  }
-  h5.top-title {
-    &>span {
-      &::before, 
-      &::after {
-        background: url(../images/icon/start_org.svg) center center no-repeat;
-        background-size: contain;
-      }
+  .main-banner{
+    .img-bn {
+      background: url(../images/hero/top_banner_b_bg.png) top center no-repeat;
+      background-size: cover;
     }
   }
+    h5.top-title {
+      &>span {
+        &::before, 
+        &::after {
+          background: url(../images/icon/start_org.svg) center center no-repeat;
+          background-size: contain;
+        }
+      }
+    }
   .info-cont{
     ul.text-list li p::before{
       background-color: var(--cvo_secondary);

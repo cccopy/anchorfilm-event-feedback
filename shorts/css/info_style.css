@@ -187,7 +187,7 @@
   text-align: center;
 }
 
-.bg-org .img-bn {
+.bg-org .main-banner .img-bn {
   background: url(../images/hero/top_banner_b_bg.png) top center no-repeat;
   background-size: cover;
 }
