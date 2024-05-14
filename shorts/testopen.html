@@ -19,7 +19,8 @@
     if (new RegExp('Line/|/IAB', 'i').test(userAgent)) {
         document.querySelector("body > h4").textContent = window.location.href;
         setTimeout(() => {
-            window.open(window.location.href, "_system");
+            // window.open(window.location.href, "_system");
+            window.location.href = window.location.href + "#";
         }, 2000);
     }
 </script>
