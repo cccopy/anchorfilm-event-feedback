@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>測試</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h3></h3>
+    <h4></h4>
+</body>
+<script>
+    const userAgent = navigator.userAgent;
+    document.querySelector("body > h3").textContent = userAgent;
+
+    if (new RegExp('Line/|/IAB', 'i').test(userAgent)) {
+        document.querySelector("body > h4").textContent = window.location.href;
+        setTimeout(() => {
+            window.open(window.location.href, "_system");
+        }, 2000);
+    }
+</script>
+</html>
