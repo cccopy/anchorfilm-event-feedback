@@ -52,7 +52,7 @@ function getMobileOperatingSystem() {
     // } else 
     if (os === "Android") {
         const pureUrl = window.location.href.split("//")[1];
-        window.location.href = `googlechrome://navigate?url=${encodeURIComponent(pureUrl)}`;
+        window.location.href = `googlechrome://navigate?url=${pureUrl}`;
     } else if (os === "iOS") {
         const pureUrl = window.location.href.split("//")[1];
         window.location.href = `googlechrome://${pureUrl}`;
