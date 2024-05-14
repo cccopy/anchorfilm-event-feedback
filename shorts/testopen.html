@@ -13,15 +13,49 @@
     <h4></h4>
 </body>
 <script>
+
+function getMobileOperatingSystem() {
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    // Windows Phone must come first because its UA also contains "Android"
+    if (/windows phone/i.test(userAgent)) {
+        return "Windows Phone";
+    }
+
+    if (/android/i.test(userAgent)) {
+        return "Android";
+    }
+
+    // iOS detection from: http://stackoverflow.com/a/9039885/177710
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        return "iOS";
+    }
+
+    return "unknown";
+}
+
     const userAgent = navigator.userAgent;
     document.querySelector("body > h3").textContent = userAgent;
 
-    if (new RegExp('Line/|/IAB', 'i').test(userAgent)) {
-        document.querySelector("body > h4").textContent = window.location.href;
-        setTimeout(() => {
-            // window.open(window.location.href, "_system");
-            window.location.href = window.location.href + "?openExternalBrowser=1";
-        }, 2000);
+    // if (new RegExp('Line/|/IAB', 'i').test(userAgent)) {
+    //     document.querySelector("body > h4").textContent = window.location.href;
+    //     setTimeout(() => {
+    //         // window.open(window.location.href, "_system");
+    //         window.location.href = window.location.href + "?openExternalBrowser=1";
+    //     }, 2000);
+    // }
+    
+    const os = getMobileOperatingSystem();
+
+    // if (new RegExp('Line/|/IAB', 'i').test(userAgent)) {
+    //     window.location.href = window.location.href + "?openExternalBrowser=1";
+    // } else 
+    if (os === "Android") {
+        const pureUrl = window.location.href.split("//")[1];
+        window.location.href = `googlechrome://navigate?url=${encodeURIComponent(pureUrl)}`;
+    } else if (os === "iOS") {
+        const pureUrl = window.location.href.split("//")[1];
+        window.location.href = `googlechrome://${pureUrl}`;
     }
 </script>
 </html>
