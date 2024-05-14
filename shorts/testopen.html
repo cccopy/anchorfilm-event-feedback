@@ -20,7 +20,7 @@
         document.querySelector("body > h4").textContent = window.location.href;
         setTimeout(() => {
             // window.open(window.location.href, "_system");
-            window.location.href = "";
+            window.location.href = window.location.href + "?openExternalBrowser=1";
         }, 2000);
     }
 </script>
