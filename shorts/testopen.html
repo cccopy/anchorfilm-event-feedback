@@ -11,6 +11,12 @@
 <body>
     <h3></h3>
     <h4></h4>
+
+    <h5>Intent</h5>
+    <a href="intent://www.cvo.com.tw/shorts/testopen.html#Intent;scheme=http;package=com.android.chrome;end" target="_blank">Open in Browser</a>
+
+    <h5>Url Scheme</h5>
+    <a href="x-web-search://?url=https://www.cvo.com.tw/shorts/testopen.html" target="_blank">Open in Browser</a>
 </body>
 <script>
 
@@ -58,9 +64,9 @@ function getMobileOperatingSystem() {
     //     window.location.href = `googlechrome://${pureUrl}`;
     // }
 
-    if (new RegExp('IAB').test(userAgent)) {
-        window.location.href = window.location.href + "?openExternalBrowser=1";
-    }
+    // if (new RegExp('IAB').test(userAgent)) {
+    //     window.location.href = window.location.href + "?openExternalBrowser=1";
+    // }
 
 </script>
 </html>
